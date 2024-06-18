@@ -4,7 +4,7 @@
     
 }
 
-#nav_main_ul{
+.main{
     list-style: none;
 }
 
@@ -15,4 +15,8 @@
 #div_websiteName_section h2{
     margin: 10px;
     font-size: xx-large;
+}
+
+.category {
+  margin: 20px;
 }

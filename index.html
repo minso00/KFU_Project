@@ -10,7 +10,7 @@
   <!--nav 구간-->
   <div id="nav_main_div">
     <nav id="nav_main_nav">
-      <ul id="nav_main_ul">
+      <ul class="main">
         <li class="nav_main_li" id="nav_signup">회원가입</li>
         <li class="nav_main_li" id="nav_login">로그인</li>
         <li class="nav_main_li" id="nav_shoppingCart">장바구니</li>
@@ -25,25 +25,28 @@
     <div id="div_websiteName_section">
       <h2>KFU</h2>
     </div>
-  </div>
+  </div>  
 
   <!--카테고리 & 검색창 구간-->
-  <div>
-    <li>
+  <div class="category" id="category-box">
+    <li class="main" id="category_li">
       카테고리
-      <ul>스킨케어</ul>
-      <ul>헤어케어</ul>
-      <ul>바디케어</ul>
-      <ul>메이크업</ul>
-      <ul>향수/디퓨저</ul>
-      <ul>헬스</ul>
+      <ul class="sub">스킨케어</ul>
+      <ul class="sub">헤어케어</ul>
+      <ul class="sub">바디케어</ul>
+      <ul class="sub">메이크업</ul>
+      <ul class="sub">향수/디퓨저</ul>
+      <ul class="sub">헬스</ul>
     </li>
+
     <!--form태그는 폼에서 받아온 내용을 action 속성에 적힌 서버의 주소에 전달해주는 기능을 한다.-->
     <form class="search-box" action="" method="get">
       <input class="search-txt" type="text" name="" placeholder="검색어를 입력하세요.">
       <button class="search-btn" type="submit"></button>
     </form>
   </div>
-  <script src="index.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
