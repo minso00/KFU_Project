@@ -1,0 +1,14 @@
+#nav_main_nav{
+    display: flex;
+    justify-content: end;
+    
+}
+
+#nav_main_ul{
+    list-style: none;
+}
+
+.nav_main_li{
+    display: inline;
+    margin: 4px;
+}
