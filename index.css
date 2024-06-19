@@ -1,6 +1,6 @@
 #nav_main_nav{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     
 }
 
@@ -13,19 +13,46 @@
     margin: 4px;
 }
 
+
 #div_websiteName_section h2{
     margin: 10px;
     font-size: xx-large;
+}
+
+.search-box {
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+.search-txt {
+    width: 150%;
 }
 
 ul li {
     list-style: none;
 }
 
+.category {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+}
+
+.category li {
+    padding-left: 5%;
+    padding-bottom: 10%;
+    background-color: aqua;
+}
+
+#main_ul {
+    padding: 0;
+    width: 18%;
+}
+
 #main_ul > ul >li {
     float:left;
 	width:140px;
-	position:relative;
 
 }
 
@@ -42,9 +69,4 @@ ul li {
 #category-box > ul >li >ul > li:hover {
     color: hotpink;
     transition: ease ls;
-}
-
-.search-box {
-    display: flex;
-    float: inline-end;
 }
