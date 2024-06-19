@@ -28,6 +28,10 @@
     width: 150%;
 }
 
+.search-btn {
+    border-radius: 50px;
+}
+
 ul li {
     list-style: none;
 }
