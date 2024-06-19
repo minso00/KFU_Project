@@ -18,7 +18,11 @@
     font-size: xx-large;
 }
 
-#category-box > ul >li {
+ul li {
+    list-style: none;
+}
+
+#main_ul > ul >li {
     float:left;
 	width:140px;
 	position:relative;
@@ -26,19 +30,18 @@
 }
 
 #category-box > ul >li > ul {
-	position:absolute;
-
+    display: none;
+    margin: 0;
+    padding: 0;
 }
 
 #category-box > ul >li:hover >ul {
-    float:left;
-	width:140px;
-	position:relative;
-
+    display: block;
 }
 
-.sub{
-    list-style: none;
+#category-box > ul >li >ul > li:hover {
+    color: hotpink;
+    transition: ease ls;
 }
 
 .search-box {
