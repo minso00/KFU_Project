@@ -12,11 +12,36 @@
     display: inline;
     margin: 4px;
 }
+
 #div_websiteName_section h2{
     margin: 10px;
     font-size: xx-large;
 }
 
-.category {
-  margin: 20px;
+#category-box > ul >li {
+    float:left;
+	width:140px;
+	position:relative;
+
+}
+
+#category-box > ul >li > ul {
+	position:absolute;
+
+}
+
+#category-box > ul >li:hover >ul {
+    float:left;
+	width:140px;
+	position:relative;
+
+}
+
+.sub{
+    list-style: none;
+}
+
+.search-box {
+    display: flex;
+    float: inline-end;
 }
