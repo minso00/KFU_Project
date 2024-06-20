@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="index.css">
   <title>KFU</title>
   <link  href="css/searchBox.css" rel="stylesheet">
-  <script src="<script src="https://kit.fontawesome.com/ee9f2d0563.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--nav 구간-->
@@ -21,20 +20,27 @@
       </ul>
     </nav>
   </div>
-  <hr>
 
   <!--쇼핑몰 이름 구간-->
   <div id="div_websiteName">
     
     <div id="div_websiteName_section">
-      <h2>KFU</h2>
+      <img src="./img/pageName.png" alt="">
+    </div>
+
+    <div id="search-box_div">
+      <form class="search-box">
+        <input class="search-txt" type="text" placeholder="검색어를 입력하세요.">
+        <button class="search-btn" type="submit">
+          <img src="./img/search.png" alt="검색아이콘">
+        </button>
+      </form>
     </div>
   </div>  
-  <hr>
   
   
   
-  <!--카테고리 & 검색창 구간-->
+  <!-- 카테고리 & 검색창 구간
   <div class="category" id="category-box">
     
     
@@ -63,37 +69,45 @@
         </ul>
       </li>
     </ul>
-    <form class="search-box">
-      <input class="search-txt" type="text" placeholder="검색어를 입력하세요.">
-      <button class="search-btn" type="submit"></button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </form>
   </div>
 
-  <!--광고 이미지-->
-  <div class="outer">
-    <div class="inner-list">
-      <div class="inner">
-        <video src="./video/vanner4.mp4"></video>
-      </div>
-      <div class="inner">
-        <img src="./img/vanner.png" alt="광고1">
-      </div>
-      <div class="inner">
-        <img src="./img/vanner2.png" alt="광고2">
-      </div>
-      <div class="inner">
-        <img src="./img/vanner3.png" alt="광고3">
-      </div>
-      <div class="inner">
-        <video src="./video/vanner5.mp4"></video>
-      </div>
-    </div>
-  </div>
-  <div class="button-list">
-    <button class="button-left">← Left</button>
-    <button class="button-right">Right →</button>
-  </div>
+  <div id="wrapper">
+    <div id="slider-wrap">
+        <ul id="slider">
+          <li>          
+            <img src="./img/vanner4.png">
+          </li>
+          
+          <li>
+            <img src="./img/vanner.png">
+          </li>
+          
+          <li>
+            <img src="./img/vanner2.png">
+          </li>
+          
+          <li>
+            <img src="./img/vanner3.png">
+          </li>
+          
+          <li>
+            <img src="./img/vanner5.png">
+          </li>
+          
+          
+        </ul>
+        
+        controls
+        <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+        <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+        <div id="counter"></div>
+        
+        <div id="pagination-wrap">
+          <ul>
+          </ul>
+        </div>
+        controls
+    </div> --> 
 
   
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
