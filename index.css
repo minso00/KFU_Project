@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+    height: 100%;
+}
 .search-box {
     height: 30px;
     width: 400px;
@@ -108,3 +112,32 @@ ul li {
     color: hotpink;
     transition: ease ls;
 }
+
+.outer {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  .inner-list {
+    display: flex;
+    transition: .3s ease-out;
+    height: 100%;
+  }
+  
+  .inner {
+    padding: 0 16px;
+  }
+
+  .inner > img, video {
+    width: 50%; 
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .button-list {
+    text-align: center;
+  }
+
+  
