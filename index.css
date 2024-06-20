@@ -264,3 +264,35 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     transition: all 0.3s cubic-bezier(1,.01,.32,1); 
 }
 
+/*footer*/
+
+footer {
+    bottom: 0px;
+	position: absolute;
+	height: 8rem;
+    width: 100%;
+    background-color: rgb(238, 232, 232);
+}
+
+#footer_sns {
+    margin: 10px;
+}
+
+#footer_sns > span {
+    padding: 10px;
+
+}
+
+#footer_sns > span > a > img {
+    width: 28px;
+}
+
+#footer_introduce {
+    padding-left: 20px;
+}
+
+#footer_introduce > p {
+    color: rgb(120, 117, 117);
+    text-align: center;
+}
+
