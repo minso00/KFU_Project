@@ -22,30 +22,30 @@ h1{
 .links{
   list-style-type:none;
   li{
-     display:inline-block;
-     margin:0 20px 0 0;
-     transition:.2s linear;
-     &:nth-child(1){
+    display:inline-block;
+    margin:0 20px 0 0;
+    transition:.2s linear;
+    &:nth-child(1){
         opacity : .6;
         &:hover{
-           opacity : 1;
+          opacity : 1;
         }
-     }
-     &:nth-child(3){
+    }
+    &:nth-child(3){
         opacity : .6;
         float:right;
-         &:hover{
-           opacity : 1;
-         }
-     }
-     a{
+        &:hover{
+          opacity : 1;
+        }
+    }
+    a{
         text-decoration:none;
         color:#0f132a;
         font-weight:bolder;
         text-align:center;
         cursor : pointer;
-     }
-   }
+    }
+  }
 }
 
 
@@ -54,10 +54,10 @@ form{
   max-width:680px;
   margin:40px auto 10px;
   .input__block{
-     margin:20px auto;
-     display:block;
-     position:relative;
-     &.first-input__block{
+    margin:20px auto;
+    display:block;
+    position:relative;
+    &.firstinput__block{
         &::before{
           content:"";
           position:absolute;
@@ -72,8 +72,8 @@ form{
           border-bottom:15px solid rgba(#0f132a,.1);
           transition:.2s linear;
         }
-     }
-     &.signup-input__block{
+    }
+    &.signup-input__block{
       &::before{
         content:"";
         position:absolute;
@@ -88,8 +88,8 @@ form{
         border-bottom:15px solid rgba(#0f132a,.1);
         transition:.2s linear;
         }
-     }
-     input{
+    }
+    input{
         display:block;
         width:90%;
         max-width:680px;
@@ -108,29 +108,29 @@ form{
           border:none;
           color : rgba(#0f132a,1);
         }
-       &.repeat__password{
-         opacity : 0;
-         display : none;
-         transition:.2s linear;
-         
-       }
-     }
+      /* &.confirm_password{
+        opacity : 0;
+        display : none;
+        transition:.2s linear;
+        
+      } */
+    }
   }
   
   .signin__btn{
-     background:#d18a80;
-     color:white;
-     display:block;
-     width:92.5%;
-     max-width:680px;
-     height:50px;
-     border-radius:8px;
-     margin:0 auto;
-     border:none;
-     cursor:pointer;
-     font-size:14px;
-     font-family: 'Montserrat', sans-serif;
-     box-shadow:0 15px 30px rgba(#d18a80,.36);
+    background:#d18a80;
+    color:white;
+    display:block;
+    width:92.5%;
+    max-width:680px;
+    height:50px;
+    border-radius:8px;
+    margin:0 auto;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow:0 15px 30px rgba(#d18a80,.36);
     transition:.2s linear;
     &:hover{
       box-shadow:0 0 0 rgba(#d18a80,.0);
@@ -171,38 +171,38 @@ form{
 
 .google__btn,
 .github__btn{
-   display:block;
-   width:90%;
-   max-width:680px;
-   margin:20px auto;
-   height:50px;
-   cursor:pointer;
-   font-size:14px;
-   font-family: 'Montserrat', sans-serif;
-   border-radius:8px;
-   border:none;
-   line-height:40px;
-   border-top: none;
-   border-left: none;
-   border-bottom: 3px solid black;
-   border-bottom: 3px solid 
-   
-   .google__btn {
+  display:block;
+  width:90%;
+  max-width:680px;
+  margin:20px auto;
+  height:50px;
+  cursor:pointer;
+  font-size:14px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius:8px;
+  border:none;
+  line-height:40px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 3px solid black;
+  border-bottom: 3px solid 
+  
+  .google__btn {
     color: white;
     box-shadow: 0 15px 30px rgba(37, 40, 45, 0.36);
     transition: 0.2s linear;
-   }
+  }
 
   .google__btn .fa {
     font-size: 20px;
     padding: 0 5px 0 0;
-   }
+  }
 
   .google__btn:hover {
     box-shadow: 0 0 0 rgba(242, 244, 247, 0);
   }
 
-   &.github__btn{
+  &.github__btn{
       background:#25282d;
       color:white;
       box-shadow:0 15px 30px rgba(#25282d,.36);
@@ -211,10 +211,10 @@ form{
           font-size:20px;
           padding:0 5px 0 0 ;
       }
-     &:hover{
-       box-shadow:0 0 0 rgba(#25282d,.0);
-     }
-   }
+    &:hover{
+      box-shadow:0 0 0 rgba(#25282d,.0);
+    }
+  }
 }
 
 footer{
@@ -228,10 +228,10 @@ footer{
       font-size:17px;
       margin:0 5px;
       .fa-facebook{
-         color:#3b5998;
+        color:#3b5998;
       }
       .fa-twitter{
-         color:#1da1f2;
+        color:#1da1f2;
       }
       .fa-instagram{
         color:#f77737;

@@ -26,17 +26,29 @@
     
     <!-- Form -->
     <form  action="" method="post">
-      <!-- email input -->
+      <!-- id input -->
       <div class="first-input input__block first-input__block">
-         <input type="email" placeholder="Email" class="input" id="email"   />
+        <input type="text" placeholder="아이디" class="input" id="id"   />
       </div>
       <!-- password input -->
       <div class="input__block">
-         <input type="password" placeholder="Password" class="input" id="password"    />
+        <input type="password" placeholder="비밀번호" class="input" id="password"    />
       </div>
       <!-- repeat password input -->
       <div class="input__block">
-         <input type="Reprat password" placeholder="Repeat password" class="input repeat__password" id="repeat__password"    />
+        <input type="password" placeholder="비밀번호 재확인" class="input confirm_password" id="confirm_password"    />
+      </div>
+      <!-- name input -->
+      <div class="input__block">
+        <input type="text" placeholder="이름" class="input" id="name"    />
+      </div>
+      <!-- email input -->
+      <div class="input__block">
+        <input type="email" placeholder="이메일" class="input" id="email"    />
+      </div>
+      <!-- phone number input -->
+      <div class="input__block">
+        <input type="text" placeholder="전화번호" class="input" name="cellPhone" id="cellPhone" maxlength="13"    />
       </div>
       <!-- sign in button -->
       <button class="signin__btn">
@@ -59,5 +71,8 @@
     </button>
     <script type="text/javascript" src="signup.js"></script>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="signup.js"></script>
 </body>
 </html>
