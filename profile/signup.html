@@ -3,55 +3,305 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="singup.css">
   <title>Document</title>
+  <style>
+    body{
+  font-family: 'Montserrat', sans-serif;
+  background:white;
+}
+
+.container{
+  display:block;
+  max-width:680px;
+  width:80%;
+  margin:120px auto;
+}
+
+h1{
+  color:#d18a80;
+  font-size:48px;
+  letter-spacing:-3px;
+  text-align:center;
+  margin:120px 0 80px 0 ;
+  transition:.2s linear;
+}
+
+.links{
+  list-style-type:none;
+  li{
+    display:inline-block;
+    margin:0 20px 0 0;
+    transition:.2s linear;
+    &:nth-child(1){
+        opacity : .6;
+        &:hover{
+          opacity : 1;
+        }
+    }
+    &:nth-child(3){
+        opacity : .6;
+        float:right;
+        &:hover{
+          opacity : 1;
+        }
+    }
+    a{
+        text-decoration:none;
+        color:#0f132a;
+        font-weight:bolder;
+        text-align:center;
+        cursor : pointer;
+    }
+  }
+}
+
+
+form{
+  width:100%;
+  max-width:680px;
+  margin:40px auto 10px;
+  .input__block{
+    margin:20px auto;
+    display:block;
+    position:relative;
+    &.firstinput__block{
+        &::before{
+          content:"";
+          position:absolute;
+          top:-15px;
+          left:50px;
+          display:block;
+          width:0;
+          height:0;
+        background:transparent;
+          border-left:15px solid transparent;
+          border-right:15px solid transparent;
+          border-bottom:15px solid rgba(#0f132a,.1);
+          transition:.2s linear;
+        }
+    }
+    &.signup-input__block{
+      &::before{
+        content:"";
+        position:absolute;
+        top:-15px;
+        left:150px;
+        display:block;
+        width:0;
+        height:0;
+        background:transparent;
+        border-left:15px solid transparent;
+        border-right:15px solid transparent;
+        border-bottom:15px solid rgba(#0f132a,.1);
+        transition:.2s linear;
+        }
+    }
+    input{
+        display:block;
+        width:90%;
+        max-width:680px;
+        height:50px;
+        margin:0 auto;
+        border-radius:8px;
+        border:none;
+        background: rgba(#0f132a,.1);
+        color : rgba(#0f132a,.3);
+        padding:0 0 0 15px;
+        font-size:14px;
+        font-family: 'Montserrat', sans-serif;
+        &:focus,
+        &:active{
+          outline:none;
+          border:none;
+          color : rgba(#0f132a,1);
+        }
+      /* &.confirm_password{
+        opacity : 0;
+        display : none;
+        transition:.2s linear;
+
+      } */
+    }
+  }
+
+  .signin__btn{
+    background:#d18a80;
+    color:white;
+    display:block;
+    width:92.5%;
+    max-width:680px;
+    height:50px;
+    border-radius:8px;
+    margin:0 auto;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow:0 15px 30px rgba(#d18a80,.36);
+    transition:.2s linear;
+    &:hover{
+      box-shadow:0 0 0 rgba(#d18a80,.0);
+    }
+  }
+}
+
+.separator{
+  display:block;
+  margin:30px auto 10px;
+  text-align:center;
+  height:40px;
+  position:relative;
+  background:transparent;
+  color: rgba(#0f132a,.4);
+  font-size:13px;
+  width:90%;
+  max-width:680px;
+  &::before{
+    content:"";
+    position:absolute;
+    top:8px;
+    left:0;
+    background: rgba(#0f132a,.2);
+    height:1px;
+    width:45%;
+  }
+  &::after{
+    content:"";
+    position:absolute;
+    top:8px;
+    right:0;
+    background: rgba(#0f132a,.2);
+    height:1px;
+    width:45%;
+  }
+}
+
+.google__btn,
+.github__btn{
+  display:block;
+  width:90%;
+  max-width:680px;
+  margin:20px auto;
+  height:50px;
+  cursor:pointer;
+  font-size:14px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius:8px;
+  border:none;
+  line-height:40px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 3px solid black;
+  border-bottom: 3px solid
+
+  .google__btn {
+    color: white;
+    box-shadow: 0 15px 30px rgba(37, 40, 45, 0.36);
+    transition: 0.2s linear;
+  }
+
+  .google__btn .fa {
+    font-size: 20px;
+    padding: 0 5px 0 0;
+  }
+
+  .google__btn:hover {
+    box-shadow: 0 0 0 rgba(242, 244, 247, 0);
+  }
+
+  &.github__btn{
+      background:#25282d;
+      color:white;
+      box-shadow:0 15px 30px rgba(#25282d,.36);
+      transition:.2s linear;
+      .fa{
+          font-size:20px;
+          padding:0 5px 0 0 ;
+      }
+    &:hover{
+      box-shadow:0 0 0 rgba(#25282d,.0);
+    }
+  }
+}
+
+footer{
+  p{
+    text-align:center;
+    .fa{
+      color: #d18a80;
+    }
+    a{
+      text-decoration:none;
+      font-size:17px;
+      margin:0 5px;
+      .fa-facebook{
+        color:#3b5998;
+      }
+      .fa-twitter{
+        color:#1da1f2;
+      }
+      .fa-instagram{
+        color:#f77737;
+      }
+      .fa-linkedin{
+        color:#0077b5;
+      }
+      .fa-behance{
+        color:#1769ff;
+      }
+    }
+
+  }
+}
+  </style>
 </head>
 <body>
   <div class="container">
     <!-- Heading -->
     <h1>SIGN UP</h1>
-    
+
     <!-- Links -->
     <ul class="links">
       <li>
-        <a href="login.html" id="signin">SIGN IN</a>
+        <a href="login" id="signin">SIGN IN</a>
       </li>
       <li>
-        <a href="signup.html" id="signup">SIGN UP</a>
+        <a href="join" id="signup">SIGN UP</a>
       </li>
       <li>
         <a href="#" id="reset">RESET</a>
       </li>
     </ul>
-    
+
     <!-- Form -->
-    <form  action="" method="post">
+    <form action="{% url 'join'%}" method="post">
+      {% csrf_token %}
       <!-- id input -->
       <div class="first-input input__block first-input__block">
-        <input type="text" placeholder="아이디" class="input" id="id"   />
+        <input type="text" placeholder="아이디" class="input" id="id" name="id" />
       </div>
       <!-- password input -->
       <div class="input__block">
-        <input type="password" placeholder="비밀번호" class="input" id="password"    />
+        <input type="password" placeholder="비밀번호" class="input" id="password" name="password" />
       </div>
       <!-- repeat password input -->
       <div class="input__block">
-        <input type="password" placeholder="비밀번호 재확인" class="input confirm_password" id="confirm_password"    />
+        <input type="password" placeholder="비밀번호 재확인" class="input confirm_password" id="confirm_password" name="password2" />
       </div>
       <!-- name input -->
       <div class="input__block">
-        <input type="text" placeholder="이름" class="input" id="name"    />
+        <input type="text" placeholder="이름" class="input" id="name" name="name" />
       </div>
       <!-- email input -->
       <div class="input__block">
-        <input type="email" placeholder="이메일" class="input" id="email"    />
+        <input type="email" placeholder="이메일" class="input" id="email" name="email" />
       </div>
       <!-- phone number input -->
       <div class="input__block">
-        <input type="text" placeholder="전화번호" class="input" name="cellPhone" id="cellPhone" maxlength="13"    />
+        <input type="text" placeholder="전화번호" class="input" name="cellPhone" id="cellPhone" maxlength="13" />
       </div>
       <!-- sign in button -->
-      <button class="signin__btn">
+      <button class="signin__btn" type="submit">
         Sign up
       </button>
     </form>
@@ -69,10 +319,61 @@
       <i class="fa fa-github"></i>
       Sign up with GitHub
     </button>
-    <script type="text/javascript" src="signup.js"></script>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type="text/javascript" src="signup.js"></script>
+  <script>
+    $(document).ready(function(){
+      let signup = $(".links").find("li").find("#signup") ;
+      let signin = $(".links").find("li").find("#signin") ;
+      let reset  = $(".links").find("li").find("#reset")  ;
+      let first_input = $("form").find(".first-input");
+      let hidden_input = $("form").find(".input__block").find("#repeat__password");
+      let signin_btn  = $("form").find(".signin__btn");
+
+     //----------- reset ---------------------
+    reset.on("click",function(e){
+      e.preventDefault();
+      $(this).parent().parent().siblings("form")
+      .find(".input__block").find(".input").val("");
+    })
+    });
+
+    //--------------phone number-----------
+    function autoHypenPhone(str){
+      str = str.replace(/[^0-9]/g, '');
+      var tmp = '';
+      if( str.length < 4){
+          return str;
+      }else if(str.length < 7){
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3);
+          return tmp;
+      }else if(str.length < 11){
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 3);
+          tmp += '-';
+          tmp += str.substr(6);
+          return tmp;
+      }else{
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 4);
+          tmp += '-';
+          tmp += str.substr(7);
+          return tmp;
+      }
+      return str;
+    }
+
+    var cellPhone = document.getElementById('cellPhone');
+    cellPhone.onkeyup = function(event){
+    event = event || window.event;
+    var _val = this.value.trim();
+    this.value = autoHypenPhone(_val) ;
+    }
+  </script>
 </body>
 </html>
